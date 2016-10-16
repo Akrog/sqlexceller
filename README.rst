@@ -105,7 +105,8 @@ Usage Help
           where transaction = :transaction and product = :product;
 
         sqlexceller query1.sql query2.sql -p transaction=BUY -p product=HAT \
-            -o "report :trans (:MONTH-:DAY).xlsx"
+            -o "report :trans (:MONTH-:DAY).xlsx" \
+            -d postgresql://user:password@localhost/mydatabase
 
         Generated file will be something like: "report BUY (10-16).xlsx"
 
