@@ -191,7 +191,7 @@ class XlsFile(File):
             self.write_row(row_data.values(), row, sheet=sheet)
             row += 1
 
-        if row_data and self._column_titles:
+        if self._column_titles and row > self._start_row + 1:
             self.write_row(row_data.keys(), self._start_row, sheet=sheet)
             row -= 1
 
