@@ -3,8 +3,6 @@
 
 from setuptools import setup
 
-import sqlexceller
-
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
@@ -21,9 +19,10 @@ test_requirements = [
     # TODO: put package test requirements here
 ]
 
+
 setup(
     name='sqlexceller',
-    version=sqlexceller.__version__,
+    version='0.1.1',
     description=("Command line program that executes SQL queries and stores "
                  "results in Excel files"),
     long_description=readme + '\n\n' + history,
